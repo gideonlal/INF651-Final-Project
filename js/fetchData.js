@@ -34,7 +34,6 @@ const showWeather = (api) => {
     let currentarr = [];
     const arr = [];
     try{
-        console.log(api);
         fetch(api)
         .then(response => {return response.json();})
         .then( data => {
