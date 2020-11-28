@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/css/style.min.css"/>
+    <script src="js/main.js" type="module"></script>
+    <!--<script src="js/storageExapmle.js" type="module"></script>-->
+    <title>Final Project</title>
+</head>
+<body>
+    <main>
+        <section class="weatherContainer">
+            <div class="search">
+                <input type="text" autocomplete="off" class="search-box" placeholder="Enter Location" tabindex="0"/>
+                <button id="localWeather" class="button" tilte="Add current location" aria-label="see local weather" tabindex="0"></button>
+            </div>
+            <div class="location">
+                <p>-</p>
+            </div>
+            <hr/>
+            <div class = "notification"></div>
+            <!-- Show local temperature-->
+            <div class="temperature">
+                <div class="dateAndTime">
+                        <span id="date">mm/dd/yyy</span><br>
+                        <span id="time">hh:mm:ss</span>
+                </div>
+                <div class="weather-icon"><img src="icons/unknown.png"></div>
+                <div class="temp-value">
+                    <p id="temp">- <span id="degree">C</span></p>
+                </div>
+                <br>
+                <div class = "temp-description"><p> - </p></div>
+            </div>
+            <div class="fiveDaysForecast">
+                <!---
+                Display 5 days forecast using js
+                -->
+            </div>         
+        </section>
+        
+    </main>
+</body>
+</html>
