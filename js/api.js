@@ -1,4 +1,4 @@
-//import {WEATHER_API_KEY} from "./apiKey.js";
+import {WEATHER_API_KEY} from "./apiKey.js";
 const api = {
     key : WEATHER_API_KEY,
     currentWeather : `http://api.openweathermap.org/data/2.5/weather?`,
