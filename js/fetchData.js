@@ -89,7 +89,8 @@ const displayCurrentWeather = (weather) => {
     time.innerHTML = currentDate.getTime();
     currentDate.reset();//reset values to ""
     //set icons
-    icon.innerHTML = `<img src="icons/${weather.weather[0].icon}.png"/>`;
+    //icon.innerHTML = `<img src="icons/${weather.weather[0].icon}.png"/>`;
+    icon.innerHTML = `<img src ="http://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png"/>`;
     
     //set current temperature
     currentTemp.setTemperature(Math.floor(weather.main.temp - KELVIN));

@@ -10,7 +10,7 @@ sessionStorage.setItem("currentLocation",false);
 
 window.onload=  () => {
     let cityName= JSON.parse(localStorage.getItem("defaultLocation"));
-    if(localStorage.getItem("defaultLocation")===null){
+    if(cityName[0] == null || cityName[0].length == 1){
         fetch.getApi(defaultCity,0,0);
     }
     else{

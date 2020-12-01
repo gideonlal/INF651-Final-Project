@@ -7,12 +7,12 @@ const displayForecast = (weather) => {
     const parentDiv = document.querySelector(".fiveDaysForecast");
     const currentDate = new DateAndTime();
     
-    //const currentTemp = new Temp();
+    //const currentTemp = new Temp();<p id="icon"><img src="icons/${data[i][2]}.png"></p>
     for (let i = 0; i<5 ; i++){
         parentDiv.innerHTML += `<div class="smallHolder${i+1}">
         <p id="date">${currentDate.getDayMonth(currentDate.setDt(data[i][0]))}</p>
         <p id="fivetemp">${data[i][1]}°<span id="degree">C</span></p>
-        <p id="icon"><img src="icons/${data[i][2]}.png"></p>
+        <p id="icon"><img src ="http://openweathermap.org/img/wn/${data[i][2]}@2x.png"></p>
         <p id="description">${data[i][3]}</p>
     </div>`;
     }
@@ -30,7 +30,7 @@ const degreeChange = (degree) => {
             parentDiv.innerHTML += `<div class="smallHolder${i+1}">
             <p id="date">${currentDate.getDayMonth(currentDate.setDt(data[i][0]))}</p>
             <p id="fivetemp">${temp.convertTemp(temp.setTemperature(data[i][1]))}°<span id="degree">${degree}</span></p>
-            <p id="icon"><img src="icons/${data[i][2]}.png"></p>
+            <p id="icon"><img src ="http://openweathermap.org/img/wn/${data[i][2]}@2x.png"></p>
             <p id="description">${data[i][3]}</p>
             </div>`;
         }
@@ -40,7 +40,7 @@ const degreeChange = (degree) => {
             parentDiv.innerHTML += `<div class="smallHolder${i+1}">
             <p id="date">${currentDate.getDayMonth(currentDate.setDt(data[i][0]))}</p>
             <p id="fivetemp">${data[i][1]}°<span id="degree">${degree}</span></p>
-            <p id="icon"><img src="icons/${data[i][2]}.png"></p>
+            <p id="icon"><img src ="http://openweathermap.org/img/wn/${data[i][2]}@2x.png"></p>
             <p id="description">${data[i][3]}</p>
             </div>`;
         }
